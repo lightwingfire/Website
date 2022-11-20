@@ -1,0 +1,62 @@
+
+#bg{
+    background-color: white;
+}
+
+h1 {
+    background-color: transparent; 
+    text-align: center;
+    vertical-align: top;
+    font-size: 270%;
+    font-family:"Lucida Console", "Courier New", monospace;
+}
+
+
+.jakob{
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    float:bottom;
+}
+
+@keyframes example {
+    0% {content: url("guy-benson.png");}
+    95% {content: url("guy-benson.png");}
+    96% {content: url("guy-benson copy.png");}
+}
+
+img.anim{
+    content: url("guy-benson.png");
+    animation-name: example;
+    animation-fill-mode: none;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.div-right{
+    float: right;
+    width: 9%;
+    
+}
+
+button.mid {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color:lightgray;
+    font-size: 170%;
+    border: none;
+    cursor: pointer;
+}
+.div-left{
+    float: left;
+    width: 10%;
+    
+}
+
+button.mid:hover{
+    text-shadow: 1px 1px 2px;
+    transition: .2s;
+}
+
