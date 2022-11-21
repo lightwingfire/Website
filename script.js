@@ -2,8 +2,18 @@
 let background = 0;
 
 function mouth() {
-    alert("You clicked the 'mouth'");
+    // alert("You clicked the 'mouth'");
+    const elem = document.getElementById('mouth');
+    if(elem.style.visibility == "visible"){
+        elem.style.visibility = "hidden";
+    }else{
+        elem.style.visibility = "visible";
+    }
+    
   }
+function mouth2(){
+    
+}
 
 function changeBackground(){
     background = background + 1;
