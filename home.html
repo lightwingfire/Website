@@ -7,9 +7,9 @@
 
     </head>
 
-    <body>
+    <body onload = "init()">
         <!-- <div id = "bg" onclick="changeBackground()"> -->
-        <h1>Jakob Coughlan</h1>
+        <h1 id = "h">Jakob Coughlan</h1>
         <div id = "bg" >
 
             <div class = "div-left">
@@ -23,8 +23,14 @@
                     <button class="mid">Resume =></button>
                 </a>
             </div>
-            
+
             <div class = "jakob">
+                <div id="eye">
+                    <div id="eyeBall"></div>
+                  </div>
+                <div id="eye2">
+                    <div id="eyeBall2"></div>
+                </div>
                 <img class = "anim" alt="Jakob" usemap="#workmap">
 
                 <map name="workmap">
@@ -32,13 +38,12 @@
                 </map>
                 
                 <img id = "mouth" alt = mouth>
+               
                 
             </div>
 
-           
-
-           
         </div>
+        
     </body>
     <script src = "script.js"></script>
 

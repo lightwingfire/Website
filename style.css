@@ -1,5 +1,5 @@
 body{
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 #bg{
     background-color: transparent;
@@ -7,6 +7,7 @@ body{
     justify-content: right;
     align-items:center;
     flex-direction: row;
+    overflow-x: hidden;
 }
 @media (max-width:1000px){
     #bg {
@@ -24,7 +25,7 @@ body{
     
 }
 
-h1 {
+#h {
     background-color: transparent; 
     text-align: center;
     vertical-align: top;
@@ -92,7 +93,9 @@ img.anim{
     /* top: 35px; */
     /* transform: translate(-70%, -50%);
     -ms-transform: translate(-50%, -50%); */
-    transform: scale(25%);
+    
+    transform: scale(25%) translate(0%,100%) rotate(0.5turn);
+    /* transform: scale(25%); */
     /* top: 450px; */
     /* left: 350px; */
     /* font-size: 16px;
@@ -142,4 +145,58 @@ button.mid:hover{
     transition: .2s;
 }
 
+#eye{
+    position:absolute;
+    /* top:50vh;
+    left:50vw; */
+    transform: translate(-160%,-130%);
+    height: 35px;
+    width: 35px;
+    background:white;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 30px 1px #222236ad;
+    z-index: -1;
+}
 
+#eyeBall{
+    position: absolute;
+    z-index: -1;
+    top:50%;
+    left:50%;
+    height: 25px;
+    width:25px;
+    transform: translate(-50%,-50%);
+    background:green;
+    border-radius: 50%;
+    transition:0;
+
+}
+
+#eye2{
+    position:absolute;
+    /* top:50vh;
+    left:50vw; */
+    transform: translate(170%,-130%);
+    height: 35px;
+    width: 35px;
+    background:white;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 30px 1px #222236ad;
+    z-index: -1;
+}
+
+#eyeBall2{
+    position: absolute;
+    z-index: -1;
+    top:50%;
+    left:50%;
+    height: 25px;
+    width:25px;
+    transform: translate(-50%,-50%);
+    background:green;
+    border-radius: 50%;
+    transition:0;
+
+}
