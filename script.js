@@ -4,10 +4,10 @@ let background = 0;
 function mouth() {
     // alert("You clicked the 'mouth'");
     const elem = document.getElementById('mouth');
-    if(elem.style.visibility == "visible"){
-        elem.style.visibility = "hidden";
+    if(elem.style.display == "none"){
+        elem.style.display = "block";
     }else{
-        elem.style.visibility = "visible";
+        elem.style.display = "none";
     }
     
   }

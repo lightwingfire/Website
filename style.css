@@ -4,7 +4,7 @@ body{
 #bg{
     background-color: transparent;
     display: flex;
-    justify-content: right;
+    justify-content: cen;
     align-items:center;
     flex-direction: row;
     overflow-x: hidden;
@@ -21,6 +21,7 @@ body{
     }
     .jakob{
         order: 3;
+        /* background-color: red; */
     }
     
 }
@@ -35,24 +36,26 @@ body{
 
 
 .jakob{
-     /* position: relative; */
+     position: relative;
      /* margin: auto; */
      /* width: 70%; */
      /* top: 0; */
      /* left: 0; */
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items:center;
+     flex-direction: column;
      order: 2;
      /* min-height: 100vh; */
-     width: 80%;
+     width: 100%;
      /* background-color: blue; */
+     overflow-y: hidden;
 }
 
 @keyframes example {
-    0% {content: url("guy-benson.png");}
-    95% {content: url("guy-benson.png");}
-    96% {content: url("guy-benson copy.png");}
+    0% {content: url("guy-benson-top.png");}
+    95% {content: url("guy-benson-top.png");}
+    96% {content: url("guy-benson-top-closed.png");}
 }
 
 img.anim{
@@ -60,7 +63,7 @@ img.anim{
     /* top: 50%; */
     /* left: 50%; */
     /* display: block; */
-    margin: auto;
+    /* margin: auto; */
 
     /* transform: translate(-50%, -50%); */
     
@@ -71,19 +74,27 @@ img.anim{
     /* max-width: 1500px; */
 
 
-    content: url("guy-benson.png");
+    content: url("guy-benson-top.png");
     animation-name: example;
     animation-fill-mode: none;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     /* background-color: purple; */
-    
-    
+
+}
+
+.bottom{
+    content: url("guy-benson-bottom.png");
+    /* background-color: purple; */
+    margin-top:-5px;
+    margin-bottom:-5px;
+    /* margin:auto; */
 }
 #mouth{
-    content: url("rocky-horror-mouth.png");
+    /* position:absolute; */
+    content: url("mouth.png");
     /* margin: auto; */
-    position: absolute;
+    /* position: absolute; */
     /* display: block; */
     /* margin-left: auto; */
     /* margin-right: auto; */
@@ -94,8 +105,10 @@ img.anim{
     /* transform: translate(-70%, -50%);
     -ms-transform: translate(-50%, -50%); */
     
-    transform: scale(25%) translate(0%,100%) rotate(0.5turn);
-    /* transform: scale(25%); */
+    /* transform: scale(25%) translate(0%,100%) rotate(0.5turn); */
+    transform: scale(75%);
+    margin-top: -70px;
+    margin-bottom: -50px;
     /* top: 450px; */
     /* left: 350px; */
     /* font-size: 16px;
@@ -103,9 +116,11 @@ img.anim{
     /* border: none; */
     /* cursor: pointer; */
     /* border-radius: 5px; */
-    visibility: hidden;
+    /* visibility: hidden; */
+    display:none;
     
 }
+
 .div-right{
 
     margin: auto;
@@ -149,7 +164,7 @@ button.mid:hover{
     position:absolute;
     /* top:50vh;
     left:50vw; */
-    transform: translate(-160%,-130%);
+    transform: translate(1450%,1060%);
     height: 35px;
     width: 35px;
     background:white;
@@ -177,7 +192,8 @@ button.mid:hover{
     position:absolute;
     /* top:50vh;
     left:50vw; */
-    transform: translate(170%,-130%);
+    transform: translate(1780%,1060%);
+    /* transform: translate(170%,-130%); */
     height: 35px;
     width: 35px;
     background:white;
