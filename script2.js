@@ -1,28 +1,41 @@
 var colors = ['#1A1423', '#3D314A', '#684756', '#EEE5E9', '#AB8476'];
-var boxes = document.querySelectorAll(".content");
+var boxes = document.querySelectorAll(".box");
 
 for (i = 0; i < boxes.length; i++) {
     // Pick a random color from the array 'colors'.
     boxes[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-    boxes[i].style.display = 'inline-block';
+    boxes[i].style.display = 'inline-box';
+}
+
+
+
+function expan(idOfArticle,idOfText){
+    const doc = document.getElementById(idOfArticle);
+    const txt = document.getElementById(idOfText);
+    if(window.innerWidth< 1000){
+        console.log(100);
+        if (doc.style.height == "50%"){
+            doc.style.height = "23%";
+            txt.style.display ="none";
+        }else{
+            doc.style.height = "50%";
+            txt.style.display = "inline-block";
+        }
+    }else{
+        if (doc.style.width == "50%"){
+            doc.style.width = "23%";
+            txt.style.display ="none";
+        }else{
+            doc.style.width = "50%";
+            txt.style.display = "inline-block";
+        }
+    }
+    
 }
 
 var i = 0;
 var txt = 'Lorem ipsum dummy text blabla.';
 var speed = 10;
-
-function expan(idOfArticle,idOfText){
-    const doc = document.getElementById(idOfArticle);
-    const txt = document.getElementById(idOfText);
-    if (doc.style.width == "50%"){
-        doc.style.width = "25%";
-        txt.style.visibility ="hidden";
-    }else{
-        doc.style.width = "50%";
-        txt.style.visibility = "visible"
-    }
-    
-}
 
 function typeWriter(r) {
 
