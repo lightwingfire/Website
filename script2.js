@@ -12,24 +12,27 @@ for (i = 0; i < boxes.length; i++) {
 function expan(idOfArticle,idOfText){
     const doc = document.getElementById(idOfArticle);
     const txt = document.getElementById(idOfText);
-    if(window.innerWidth< 1000){
+    // if(window.innerWidth< 1000){
         console.log(100);
-        if (doc.style.height == "50%"){
-            doc.style.height = "23%";
+        console.log(doc.style.flexGrow);
+        if (doc.style.flexGrow == 2){
+            doc.style.flexGrow = 1;
             txt.style.display ="none";
         }else{
-            doc.style.height = "50%";
+            doc.style.flexGrow = 2;
+            
+
             txt.style.display = "inline-block";
         }
-    }else{
-        if (doc.style.width == "50%"){
-            doc.style.width = "23%";
-            txt.style.display ="none";
-        }else{
-            doc.style.width = "50%";
-            txt.style.display = "inline-block";
-        }
-    }
+    // }else{
+    //     if (doc.style.width == "50%"){
+    //         doc.style.width = "23%";
+    //         txt.style.display ="none";
+    //     }else{
+    //         doc.style.width = "50%";
+    //         txt.style.display = "inline-block";
+    //     }
+    // }
     
 }
 

@@ -7,6 +7,9 @@
 .content{
     flex-direction: column;
 }
+.box{
+    width: 0%;
+}
 }
 
 
@@ -34,7 +37,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items:flex-end;
+    align-items:center;
     
 }
 .box{
@@ -45,6 +48,7 @@ header {
     transition: all .3s ease-in;
     overflow: hidden;
     min-width: 400px;
+    flex-grow: 1;
 }
 .content{
     /* background-color: whitesmoke; */
@@ -52,9 +56,10 @@ header {
     min-width: 400px;
 
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: nowrap;
     overflow: hidden;
+    flex-grow: 1;
 
     justify-content: center;
 
