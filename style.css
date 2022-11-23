@@ -1,5 +1,6 @@
 body{
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 #bg{
     background-color: transparent;
@@ -50,6 +51,9 @@ body{
      width: 100%;
      /* background-color: blue; */
      overflow-y: hidden;
+     overflow-x: hidden;
+
+     -webkit-tap-highlight-color: transparent;
 }
 
 @keyframes example {
@@ -79,6 +83,7 @@ img.anim{
     animation-fill-mode: none;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    -webkit-tap-highlight-color: transparent;
     /* background-color: purple; */
 
 }
@@ -104,7 +109,7 @@ img.anim{
     /* top: 35px; */
     /* transform: translate(-70%, -50%);
     -ms-transform: translate(-50%, -50%); */
-    
+    -webkit-tap-highlight-color: transparent;
     /* transform: scale(25%) translate(0%,100%) rotate(0.5turn); */
     transform: scale(75%);
     margin-top: -70px;
