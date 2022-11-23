@@ -196,6 +196,9 @@ button.mid {
     font-size: 170%;
     border: none;
     cursor: pointer;
+    z-index: 4;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
 }
 .div-left{
     /* float: left; */
