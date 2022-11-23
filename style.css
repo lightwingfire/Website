@@ -27,6 +27,46 @@ body{
     
 }
 
+@media (max-width:800px){
+    #bg {
+        flex-direction: column;
+    }
+    .div-left{
+        order: 1;
+    }
+    .div-right{
+        order: 2;
+    }
+    .jakob{
+        order: 3;
+        /* margin-bottom: 10px; */
+        transform: translate(0%,-10%);
+        /* background-color: red; */
+    }
+    
+}
+@media (max-width:700px){
+    #bg {
+        flex-direction: column;
+    }
+    .div-left{
+        order: 1;
+    }
+    .div-right{
+        order: 2;
+    }
+    .jakob{
+        order: 3;
+        /* margin-bottom: 10px; */
+        transform: translate(0%,-13%);
+
+    }
+    #mouth{
+        transform:scale(2%);
+    }
+    
+}
+
 #h {
     background-color: transparent; 
     text-align: center;
@@ -111,9 +151,9 @@ img.anim{
     -ms-transform: translate(-50%, -50%); */
     -webkit-tap-highlight-color: transparent;
     /* transform: scale(25%) translate(0%,100%) rotate(0.5turn); */
-    transform: scale(75%);
-    margin-top: -70px;
-    margin-bottom: -50px;
+    transform: scale(50%);
+    margin-top: -100px;
+    margin-bottom: -80px;
     /* top: 450px; */
     /* left: 350px; */
     /* font-size: 16px;
