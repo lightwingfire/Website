@@ -67,11 +67,15 @@ body{
     
 }
 
-#h {
-    background-color: transparent; 
+header {
+    position: sticky;
+    background-color: white; 
     text-align: center;
-    vertical-align: top;
-    font-size: 270%;
+    /* vertical-align: top; */
+    top: 0;
+    width: 100%;
+    padding-top: 2px;
+    /* font-size: 270%; */
     font-family:"Lucida Console", "Courier New", monospace;
 }
 

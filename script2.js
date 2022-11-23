@@ -16,12 +16,11 @@ function expan(idOfArticle,idOfText){
         console.log(100);
         console.log(doc.style.flexGrow);
         if (doc.style.flexGrow == 2){
-            doc.style.flexGrow = 1;
+            doc.style.flexGrow = 0;
             txt.style.display ="none";
         }else{
             doc.style.flexGrow = 2;
             
-
             txt.style.display = "inline-block";
         }
     // }else{
