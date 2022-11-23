@@ -9,8 +9,8 @@
     align-items: center;
 }
 .box{
-    width: 0%;
     margin: 3.5em !important;
+    min-width: 60vw !important;
 }
 .content input{
     max-width: 120%!important;
@@ -27,8 +27,9 @@
 header {
     height: 5vh;
     padding-top: 5vh;
-    padding-bottom: 5.5vh;
+    padding-bottom: 9.5vh;
     font-size: 2vh;
+    /* box-shadow: 0 0 30px 1px #222236ad; */
 }
 }
 
