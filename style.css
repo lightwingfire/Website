@@ -58,7 +58,7 @@ body{
     .jakob{
         order: 3;
         /* margin-bottom: 10px; */
-        transform: translate(0%,-13%);
+        transform: translate(0%,-10%);
 
     }
     #mouth{
@@ -69,7 +69,7 @@ body{
 
 header {
     position: sticky;
-    background-color: white; 
+    background-color: transparent; 
     text-align: center;
     /* vertical-align: top; */
     top: 0;
@@ -100,10 +100,14 @@ header {
      -webkit-tap-highlight-color: transparent;
 }
 
+.jakob:hover{
+    
+}
+
 @keyframes example {
-    0% {content: url("guy-benson-top.png");}
-    95% {content: url("guy-benson-top.png");}
-    96% {content: url("guy-benson-top-closed.png");}
+    0% {content: url("guy-benson-top2.png");}
+    94% {content: url("guy-benson-top2.png");}
+    95% {content: url("guy-benson-top2-closed.png");}
 }
 
 img.anim{
@@ -122,7 +126,7 @@ img.anim{
     /* max-width: 1500px; */
 
 
-    content: url("guy-benson-top.png");
+    content: url("guy-benson-top2.png");
     animation-name: example;
     animation-fill-mode: none;
     animation-duration: 4s;
@@ -132,12 +136,24 @@ img.anim{
 
 }
 
+@keyframes breathing {
+    0% {content: url("guy-benson-bottom2.png");}
+    25% {content: url("guy-benson-bottom3.png");}
+    45% {content: url("guy-benson-bottom4.png");}
+    75% {content: url("guy-benson-bottom3.png");}
+}
+
 .bottom{
-    content: url("guy-benson-bottom.png");
+    content: url("guy-benson-bottom2.png");
     /* background-color: purple; */
     margin-top:-5px;
     margin-bottom:-5px;
     /* margin:auto; */
+    animation-name: breathing;
+    animation-fill-mode: none;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-tap-highlight-color: transparent;
 }
 #mouth{
     /* position:absolute; */
@@ -174,8 +190,9 @@ img.anim{
 
     margin: auto;
     /* align-items: flex-end; */
-    /* background-color: red; */
-
+    background-color: white;
+    border-radius: 6px;
+    z-index: 5;
     /* float: right;
     text-align: right;
     width: 9%;
@@ -205,6 +222,9 @@ button.mid {
     /* width: 10%; */
     margin: auto;
     order: 1;
+    background-color: white;
+    border-radius: 6px;
+    z-index: 5;
 }
 
 button.mid:hover{
@@ -216,9 +236,9 @@ button.mid:hover{
     position:absolute;
     /* top:50vh;
     left:50vw; */
-    transform: translate(1450%,1060%);
-    height: 35px;
-    width: 35px;
+    transform: translate(990%,660%);
+    height: 50px;
+    width: 50px;
     background:white;
     border-radius: 50%;
     overflow: hidden;
@@ -234,7 +254,7 @@ button.mid:hover{
     height: 25px;
     width:25px;
     transform: translate(-50%,-50%);
-    background:green;
+    background:lightblue;
     border-radius: 50%;
     transition:0;
 
@@ -244,10 +264,10 @@ button.mid:hover{
     position:absolute;
     /* top:50vh;
     left:50vw; */
-    transform: translate(1780%,1060%);
+    transform: translate(1272%,655%);
     /* transform: translate(170%,-130%); */
-    height: 35px;
-    width: 35px;
+    height: 50px;
+    width: 50px;
     background:white;
     border-radius: 50%;
     overflow: hidden;
@@ -263,7 +283,7 @@ button.mid:hover{
     height: 25px;
     width:25px;
     transform: translate(-50%,-50%);
-    background:green;
+    background:lightblue;
     border-radius: 50%;
     transition:0;
 

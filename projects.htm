@@ -34,14 +34,12 @@
                 <h2 onclick = "expan('a2','t2')">Anti-Anime-Automata</h2>
                 <div class = "content" >
 
-                    <input type = "image" onclick = "expan('a2','t2')" src = "https://pbs.twimg.com/profile_images/1285655593592791040/HtwPZgej_400x400.jpg">
+                    <input type = "image" onclick = "expan('a2','t2')" src = "AAA.png">
                     <div id = 't2' class = "text">
-                        To achieve this, it was necessary to detect when the player missed a note.
-                         Initial attempts involved using Tensor Flow AI to detect the game state from the screen,
-                          but it was unreliable. Instead, the game’s memory was read to achieve detection. 
-                          When the player misses a note, a certain section of memory changes, 
-                          and a script reads the change in game state. It then sends a signal 
-                          to an Arduino which triggers the stun gun’s fire button, which shocks the player holding the guitar.
+                        After Gathering 10,000 profile pictures and sorting them, I used Tensorflow to 
+                        train an AI to detect if an image contained anime. Once I generated the model, I then integrated it
+                        into a discord bot. This Bot acts on an aggression level set by the admins, it can quarantine, kick, and
+                        ban users who do not adhere to the servers profile picture policy.  
                     </div>
                 </div>
             </div>
